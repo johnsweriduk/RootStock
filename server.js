@@ -16,6 +16,7 @@ app.use(session({
 // Middleware
 app.use(express.json());
 app.use(express.static('public'));
+app.use('/partials', express.static('partials'));
 
 // Controllers
 const portfolioController = require('./controllers/portfolio_controller.js');
@@ -32,6 +33,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 mongoose.connection.once('open', () => {
     console.log('connected to mongod...');
 });
+
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
 db.on('connected', () => console.log('mongo connected: ', process.env.MONGODB_URI));
 db.on('disconnected', () => console.log('mongo disconnected'));
