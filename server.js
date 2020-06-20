@@ -19,14 +19,20 @@ app.use(express.static('public'));
 app.use('/partials', express.static('partials'));
 
 // Controllers
+
 const portfolioController = require('./controllers/portfolio_controller.js');
-app.use('/portfolio', portfolioController);
+app.use('/admin/portfolio', portfolioController);
 
 const userController = require('./controllers/user_controller.js');
-app.use('/user', userController);
+app.use('/admin/user', userController);
 
 const sessionController = require('./controllers/session_controller.js');
-app.use('/session', sessionController);
+app.use('/admin/session', sessionController);
+
+// Redirect to angular
+app.get('*', function(req, res) {
+    res.sendfile('./public/index.html')
+});
 
 // Database
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -40,6 +46,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 // uncomment to wipe database
 //db.dropDatabase(console.log('dropped'));
+
 
 // Listener
 app.listen(process.env.PORT, () => {
