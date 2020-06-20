@@ -1,1 +1,8 @@
-stock
+<form ng-submit="ctrl.findStock()">
+  <input type="text" ng-model="ctrl.stockInput" placeholder="input stock symbol">
+</form>
+<div class="stock-info-container">
+  <h1>{{ctrl.companyName}}</h1>
+  <h3>{{ctrl.stockSymbol}}</h3>
+  <h6>{{ctrl.lastUpdate}}</h6>
+</div>
