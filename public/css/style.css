@@ -1,0 +1,49 @@
+/* GLOBAL STYLES */
+* {
+  font-family: serif;
+}
+
+/* SIGNUP-VIEW STYLES */
+.signup-container {
+  background: #168593;
+  width: 80%;
+  margin: 100px auto;
+  padding: 50px 100px;
+  color: white;
+}
+
+.signup-container input[type=submit] {
+  color: white;
+}
+
+.signup-age-input-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup-age-input {
+  display: flex;
+  font-size: 1.3em;
+}
+
+.signup-purpose-input-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup-purpose-input {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.signup-timeframe-input-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup-timeframe-input {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
