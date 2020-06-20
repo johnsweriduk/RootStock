@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html ng-app="RootStock">
-<head ng-include="'partials/global/head.html'"></head>
-<body ng-controller="MainController as ctrl">
-    <nav ng-include="'partials/global/nav.html'"></nav>
-    <main ng-include="'partials/global/main.html'"></main>
-    <footer ng-include="'partials/global/footer.html'"></footer>
-</body>
+<head>
+    <meta charset="utf-8">
+    <title>{{ ctrl.pageTitle }}</title>
+    <script src="/js/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/js/angular/angular-route.min.js" charset="utf-8"></script>
+    <script src="/js/zingchart/zingchart.min.js" charset="utf-8"></script>
+    <script src="/js/app.js" charset="utf-8"></script>
+    <script src="/js/controllers/signup.controller.js" charset="utf-8"></script>
+    <script src="/js/controllers/login.controller.js" charset="utf-8"></script>
+    <script src="/js/controllers/portfolio.controller.js" charset="utf-8"></script>
+    <script src="/js/controllers/stock.controller.js" charset="utf-8"></script>
+    <script src="/js/controllers/search.controller.js" charset="utf-8"></script>
+    <script src="/js/routes.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <base href="/">
+</head>
+<body ng-view></body>
