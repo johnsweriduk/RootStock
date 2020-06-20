@@ -25,6 +25,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
       }
     }).then(response => {
       console.log(response);
+      this.portfolioType = ''
     }, error => {
       console.log(error);
     })
