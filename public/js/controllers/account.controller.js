@@ -1,4 +1,4 @@
 // Handles the views for stocks
-app.controller('AccountController', function($scope) {
+app.controller('AccountController', function() {
 
 });
