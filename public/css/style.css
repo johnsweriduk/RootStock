@@ -5,45 +5,77 @@
 
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  background: #168593;
+  background: #E7E8E9;
   width: 80%;
+  min-height: 75vh;
   margin: 100px auto;
   padding: 50px 100px;
-  color: white;
+  color: #168593;
+  border-radius: 10px;
+  /* border: 3px solid yellow; */
 }
 
-.signup-container input[type=submit] {
-  color: white;
+.welcome-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  background: #168593;
+  color: ivory;
+  /* border: 3px solid orange; */
+  padding-left: 25px;
 }
 
-.signup-age-input-container {
+.welcome-message span {
+  font-style: italic;
+}
+
+.questionnaire {
+  /* border: 10px solid pink; */
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-top: 10px;
 }
 
-.signup-age-input {
-  display: flex;
-  font-size: 1.3em;
+.question {
+  /* border: 3px solid blue; */
+  font-size: 3em;
 }
 
-.signup-purpose-input-container {
+.response-container {
+  /* border: 3px solid black; */
   display: flex;
-  justify-content: space-around;
 }
 
-.signup-purpose-input {
+.answer-container {
+  margin-top: 25px;
   display: flex;
+  flex-direction: column;
+  /* border: 3px solid red; */
+  font-size: 2em;
+  min-width: 20%;
+}
+
+.answer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.portfolio-button {
+  background: #168593;
+  color: ivory;
+  /* border: 2px solid black; */
+  padding-left: 15px;
+  border-radius: 3px;
+}
+
+.portfolio-button:hover {
+  cursor: pointer
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 1.3em;
-}
-
-.signup-timeframe-input-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.signup-timeframe-input {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
+  padding-left: 50px;
+  /* border: 3px solid teal; */
 }
