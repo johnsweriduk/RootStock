@@ -90,8 +90,24 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
         portfolioType: this.portfolioType
       }
     }).then(response => {
-      console.log(response);
+      console.log('portfolio: ', response);
+      this.newPortfolioId = response.data._id
       this.portfolioType = ''
+      // console.log('username:', this.username);
+      // console.log('password:', this.password);
+      // console.log('portfolio id:', this.newPortfolioId);
+      $http({
+        method: 'POST',
+        url: '/admin/user',
+        data:
+        {
+          username: this.username,
+          password: this.password,
+          portfolioId: this.newPortfolioId
+        }
+      }).then(response => {
+        console.log('user: ', response);
+      })
     }, error => {
       console.log(error);
     })

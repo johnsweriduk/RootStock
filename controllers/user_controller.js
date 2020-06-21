@@ -17,4 +17,17 @@ router.post('/', (req, res) => {
     });
 });
 
+router.get('/', (req, res) => {
+  User.find({}, (error, foundUser) => {
+    console.log(foundUser);
+    res.json(foundUser)
+  })
+})
+
+router.delete('/:id', (req, res) => {
+    User.findByIdAndRemove(req.params.id, (err, deletedUser) => {
+        res.json(deletedUser);
+    });
+});
+
 module.exports = router;
