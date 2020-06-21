@@ -16,6 +16,7 @@
 }
 
 .welcome-message {
+  font-family: 'Playfair Display', serif;
   font-size: 5em;
   background: #168593;
   color: ivory;
@@ -23,11 +24,16 @@
   padding-left: 25px;
 }
 
+.welcome-message span {
+  font-style: italic;
+}
+
 .questionnaire {
   /* border: 10px solid pink; */
   display: flex;
   flex-direction: column;
   padding-left: 100px;
+  margin-top: 10px;
 }
 
 .question {
@@ -70,5 +76,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 50px;
   /* border: 3px solid teal; */
 }

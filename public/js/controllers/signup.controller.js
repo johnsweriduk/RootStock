@@ -35,7 +35,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
       answer3: '10+ years'
     },
     {
-      question: 'Thank you for your input'
+      question: 'Thank you, your specifications have been saved'
     }
   ]
 
