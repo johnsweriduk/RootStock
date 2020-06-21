@@ -41,6 +41,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
 
   // Assigns question set
   this.setQuestion = (arr) => {
+    console.log('setting question set');
     this.question = arr[0].question,
     this.answer1 = arr[0].answer1,
     this.answer2 = arr[0].answer2,
@@ -48,6 +49,10 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
   }
 
   this.setQuestion(this.questionArray)
+  setTimeout(() => {
+    console.log('setTimeout Triggering');
+
+  }, 2000)
 
   // Switches to next tree image
   this.incrementTree = () => {
