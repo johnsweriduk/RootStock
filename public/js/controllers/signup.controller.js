@@ -13,6 +13,14 @@
 // Handles the views for signup
 app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
 
+  this.treeSrc = 1;
+
+  this.incrementTree = () => {
+    if (this.treeSrc < 4) {
+      this.treeSrc++;  
+    }
+  }
+
   this.generatePortfolio = () => {
     console.log('generating portfolio');
     // CREATE PORTFOLIO //
