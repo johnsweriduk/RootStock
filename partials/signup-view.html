@@ -1,54 +1,20 @@
 <div class="signup-container">
-  <h1>Let's determine your risk tolerance</h1>
-  <h2>Questionnaire:</h2>
-  <form ng-submit="ctrl.generatePortfolio()">
-    <h4>How old are you?</h4>
-    <div class="signup-age-input-container">
-      <div class="signup-age-input">
-        <input id="signup-age-input-1" name="signup-age" type="radio">
-        <label for="signup-age-input-1">Under 30</label>
+  <div class="welcome-message">Welcome to <span>rootStock</span></div>
+  <div ng-click="ctrl.dev = !ctrl.dev">[CLICK HERE FOR EXTRA DEV TESTING INFO]</div>
+  <h2 ng-show="ctrl.dev">DEV:: Question Points: {{ctrl.questionPoints}}</h2>
+  <h2 ng-show="ctrl.dev">DEV:: Portfolio Type: {{ctrl.portfolioType}}</h2>
+  <div class="questionnaire">
+    <div class="question">{{ctrl.question}}</div>
+    <div class="response-container">
+      <div class="answer-container">
+        <div ng-show="ctrl.portfolioType" ng-click="ctrl.generatePortfolio()" class="portfolio-button" >Generate Portfolio</div>
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(1)">{{ctrl.answer1}}</div>
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(2)">{{ctrl.answer2}}</div>
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(3)">{{ctrl.answer3}}</div>
       </div>
-      <div class="signup-age-input">
-        <input id="signup-age-input-2" name="signup-age" type="radio">
-        <label for="signup-age-input-2">Between 30-50</label>
-      </div>
-      <div class="signup-age-input">
-        <input id="signup-age-input-3" name="signup-age" type="radio">
-        <label for="signup-age-input-3">Over 50</label>
-      </div>
-    </div>
-    <h4>What is your purpose of investment?</h4>
-    <div class="signup-purpose-input-container">
-      <div class="signup-purpose-input">
-        <input id="signup-purpose-input-1" name="signup-purpose" type="radio">
-        <label for="signup-purpose-input-1">Growth</label>
-      </div>
-      <div class="signup-purpose-input">
-        <input id="signup-purpose-input-2" name="signup-purpose" type="radio">
-        <label for="signup-purpose-input-2">Income</label>
-      </div>
-      <div class="signup-purpose-input">
-        <input id="signup-purpose-input-3" name="signup-purpose" type="radio">
-        <label for="signup-purpose-input-3">Preservation</label>
+      <div class="image-container">
+        <img ng-src="images/signup-tree-{{ctrl.treeSrc}}.png">
       </div>
     </div>
-    <h4>What is your timeframe for investment?</h4>
-    <div class="signup-timeframe-input-container">
-      <div class="signup-timeframe-input">
-        <input id="signup-timeframe-input-1" name="signup-timeframe" type="radio">
-        <label for="signup-timeframe-input-1">Under 5 years</label>
-      </div>
-      <div class="signup-timeframe-input">
-        <input id="signup-timeframe-input-2" name="signup-timeframe" type="radio">
-        <label for="signup-timeframe-input-2">5-10 years</label>
-      </div>
-      <div class="signup-timeframe-input">
-        <input id="signup-timeframe-input-3" name="signup-timeframe" type="radio">
-        <label for="signup-timeframe-input-3">10+ years</label>
-      </div>
-    </div>
-    <label for="signup-portfolioType-input">Portfolio Type Test Input</label>
-    <input id="signup-portfolioType-input" type="text" ng-model="ctrl.portfolioType">
-    <input type="submit" name="" value="Generate Profile">
-  </form>
+  </div>
 </div>
