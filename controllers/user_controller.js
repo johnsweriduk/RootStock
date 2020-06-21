@@ -17,4 +17,12 @@ router.post('/', (req, res) => {
     });
 });
 
+router.get('/', (req, res) => {
+  User.find({}, (error, foundUser) => {
+    console.log(foundUser);
+    res.json(foundUser)
+  })
+})
+
+
 module.exports = router;
