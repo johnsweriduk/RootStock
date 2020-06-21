@@ -49,10 +49,6 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
   }
 
   this.setQuestion(this.questionArray)
-  setTimeout(() => {
-    console.log('setTimeout Triggering');
-
-  }, 2000)
 
   // Switches to next tree image
   this.incrementTree = () => {
