@@ -24,5 +24,10 @@ router.get('/', (req, res) => {
   })
 })
 
+router.delete('/:id', (req, res) => {
+    User.findByIdAndRemove(req.params.id, (err, deletedUser) => {
+        res.json(deletedUser);
+    });
+});
 
 module.exports = router;
