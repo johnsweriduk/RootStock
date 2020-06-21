@@ -5,17 +5,17 @@
 
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  background: #168593;
+  background: #E7E8E9;
   width: 80%;
   height: 75vh;
   margin: 100px auto;
   padding: 50px 100px;
-  color: white;
+  color: #168593;
   display: flex;
 }
 
 .question-container {
-  border: 4px solid red;
+  /* border: 4px solid red; */
   width: 60%;
 }
 
@@ -35,51 +35,13 @@
 }
 
 .portfolio-button {
-  color: white;
+  color: #168593;
 }
 
 .image-container {
-  border: 4px solid purple;
+  /* border: 4px solid purple; */
   width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-/*
-.signup-container input[type=submit] {
-  color: white;
-}
-
-.signup-age-input-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.signup-age-input {
-  display: flex;
-  font-size: 1.3em;
-}
-
-.signup-purpose-input-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.signup-purpose-input {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
-}
-
-.signup-timeframe-input-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.signup-timeframe-input {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
-} */
