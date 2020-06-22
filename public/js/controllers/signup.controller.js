@@ -51,6 +51,11 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
   this.setUsernameAndPassword = () => {
     console.log(`SETTING - username: ${this.username} | password: ${this.password}`);
     this.usernameAndPasswordCreated = true;
+  }
+
+  this.setInvestment = () => {
+    console.log(`SETTING - investment amount: ${this.investmentAmount}`);
+    this.investmentAmountCreated = true;
     this.setQuestion(this.questionArray)
   }
 
@@ -74,11 +79,20 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
 
   this.setPortfolioType = () => {
     if (this.questionPoints < 5) {
-      this.portfolioType = 'aggresive'
+      this.portfolioType = 'aggressive'
+      this.conservativePercent = 40;
+      this.moderatePercent = 40;
+      this.aggressivePercent = 20;
     } else if (this.questionPoints > 7) {
       this.portfolioType = 'moderate'
+      this.conservativePercent = 55;
+      this.moderatePercent = 35;
+      this.aggressivePercent = 15;
     } else {
       this.portfolioType = 'conservative'
+      this.conservativePercent = 70;
+      this.moderatePercent = 20;
+      this.aggressivePercent = 10;
     }
   }
 
@@ -91,7 +105,11 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
       url: '/admin/portfolio',
       data:
       {
-        portfolioType: this.portfolioType
+        portfolioType: this.portfolioType,
+        investmentAmount: this.investmentAmount,
+        conservativePercent: this.conservativePercent,
+        moderatePercent: this.moderatePercent,
+        aggressivePercent: this.aggressivePercent,
       }
     }).then(response => {
       console.log('portfolio: ', response);
@@ -107,7 +125,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
         {
           username: this.username,
           password: this.password,
-          portfolioId: this.newPortfolioId
+          portfolioId: this.newPortfolioId,
         }
       }).then(response => {
         console.log('user: ', response);
