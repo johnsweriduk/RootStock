@@ -1,6 +1,6 @@
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  background: #E7E8E9;
+  background-color: #E7E8E9;
   width: 80%;
   min-height: 75vh;
   margin: 100px auto;
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   font-size: 2em;
-  min-width: 20%;
+  min-width: 60%;
 }
 
 .answer:hover {
@@ -55,6 +55,7 @@
   color: ivory;
   padding-left: 15px;
   border-radius: 3px;
+  width: 40%;
 }
 
 .portfolio-button:hover {
