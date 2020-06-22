@@ -1,6 +1,5 @@
 /* FOOTER STYLES TODO:: Should these go into a *global* styles section in the styles.css?*/
 footer {
-  margin-top: 20px;
   background-color: #168593;
   height: 225px;
   display: flex;
