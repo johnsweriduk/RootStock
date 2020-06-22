@@ -1,0 +1,22 @@
+/* NAV STYLES TODO:: Should these go into a *global* styles section in the styles.css?*/
+nav {
+  background-color: #EDFEFF;
+  display: flex;
+}
+
+nav h2 {
+  margin: 0 0 0 20px;
+  color: black;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.nav-buttons a {
+  margin: 10px;
+  color: black;
+}

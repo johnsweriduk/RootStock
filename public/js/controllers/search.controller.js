@@ -1,14 +1,44 @@
 // Handles the views for stocks
-app.controller('SearchController', function($scope, $http) {
+app.controller('SearchController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
     this.stocks = [];
     this.addedStocks = [];
     this.filter = 'companyName';
     this.filterDirection = 0;
+    this.searchType = $routeParams.searchType;
+
+    this.getUser = () => {
+        $http({
+            method: 'GET',
+            url: '/admin/session'
+        }).then(
+            response => {
+                $scope.user = response.data;
+                console.log('test');
+                    const portfolioId = response.data.portfolioId;
+                    $http({
+                        method: 'GET',
+                        url: '/admin/portfolio/' + portfolioId
+                    })
+                        .then(
+                            response => {
+                                $scope.portfolio = response.data;
+                            },
+                            error => {
+
+                            }
+                        )
+                }
+            },
+            error => {
+
+            }
+        )
+    };
 
     this.getStocks = () => {
         $http({
             method: 'GET',
-            url: '/admin/stock/aggressive'
+            url: '/admin/stock/' + this.searchType
         }).then(
             response => {
                 this.stocks = response.data;
@@ -30,7 +60,7 @@ app.controller('SearchController', function($scope, $http) {
             }
             count++;
         }
-        if(!exists) {
+        if(!exists && this.addedStocks.length < 10) {
             this.addedStocks.push(stock);
         }
     };
@@ -63,5 +93,38 @@ app.controller('SearchController', function($scope, $http) {
         }
         return false;
     };
+
+    this.updatePortfolio = () => {
+        if(this.addedStocks.length < 10) {
+            return;
+        }
+        const portfolioId = $scope.portfolio._id;
+        const portfolioInvestment = $scope.portfolio.investmentAmount;
+        const investmentPercent = $scope.portfolio[this.searchType + 'Percent'];
+        const investmentAmount = portfolioInvestment * investmentPercent / 100;
+
+        const newPortfolio = [];
+        for(let stock of this.addedStocks) {
+            newPortfolio.unshift({
+                ticker: stock.symbol,
+                shares: investmentAmount / 10 / stock.price,
+                price: stock.price
+            });
+        }
+        $http({
+            method: 'PUT',
+            url: '/admin/portfolio/' + portfolioId + '/' + this.searchType,
+            data: newPortfolio
+        }).then(
+            response => {
+
+            },
+            error => {
+
+            }
+        );
+    };
+
+    this.getUser();
     this.getStocks();
-});
+}]);

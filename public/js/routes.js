@@ -5,7 +5,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Homepage
     $routeProvider.when('/', {
         templateUrl: 'partials/main-view.html',
-        controller: 'MainController',
+        controller: 'HomepageController',
         controllerAs: 'ctrl'
     });
 
@@ -46,6 +46,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     // Stock Search
     $routeProvider.when('/search', {
+        templateUrl: 'partials/search-view.html',
+        controller: 'SearchController',
+        controllerAs: 'ctrl'
+    });
+    $routeProvider.when('/search/:searchType', {
         templateUrl: 'partials/search-view.html',
         controller: 'SearchController',
         controllerAs: 'ctrl'

@@ -1,0 +1,58 @@
+<div class="field columns two" ng-click="ctrl.filterStocks('companyName')">
+    <p>Name</p>
+    <div class="filters" ng-show="ctrl.filter=='companyName'">
+        <div class="down" ng-show="ctrl.filterDirection == -1">
+            <img src="/images/filter/arrow-down.png">
+        </div>
+        <div class="up" ng-show="ctrl.filterDirection == 1">
+            <img src="/images/filter/arrow-up.png">
+        </div>
+    </div>
+</div>
+<div class="field columns two" ng-click="ctrl.filterStocks('symbol')">
+    <p>Ticker</p>
+    <div class="filters" ng-show="ctrl.filter=='symbol'">
+        <div class="down" ng-show="ctrl.filterDirection == -1">
+            <img src="/images/filter/arrow-down.png">
+        </div>
+        <div class="up" ng-show="ctrl.filterDirection == 1">
+            <img src="/images/filter/arrow-up.png">
+        </div>
+    </div>
+</div>
+<div class="field columns one" ng-click="ctrl.filterStocks('latestPrice')">
+    <p>Price</p>
+    <div class="filters" ng-show="ctrl.filter=='latestPrice'">
+        <div class="down" ng-show="ctrl.filterDirection == -1">
+            <img src="/images/filter/arrow-down.png">
+        </div>
+        <div class="up" ng-show="ctrl.filterDirection == 1">
+            <img src="/images/filter/arrow-up.png">
+        </div>
+    </div>
+</div>
+<div class="field columns three" ng-click="ctrl.filterStocks('marketCap')">
+    <p>Market Cap</p>
+    <div class="filters" ng-show="ctrl.filter=='marketCap'">
+        <div class="down" ng-show="ctrl.filterDirection == -1">
+            <img src="/images/filter/arrow-down.png">
+        </div>
+        <div class="up" ng-show="ctrl.filterDirection == 1">
+            <img src="/images/filter/arrow-up.png">
+        </div>
+    </div>
+</div>
+<div class="field columns two" ng-click="ctrl.filterStocks('latestUpdate')">
+    <p>Last Update</p>
+    <div class="filters" ng-show="ctrl.filter=='latestUpdate'">
+        <div class="down" ng-show="ctrl.filterDirection == -1">
+            <img src="/images/filter/arrow-down.png">
+        </div>
+        <div class="up" ng-show="ctrl.filterDirection == 1">
+            <img src="/images/filter/arrow-up.png">
+        </div>
+    </div>
+</div>
+<div class="field columns two">
+    <button ng-click="ctrl.updatePortfolio()">Add to portfolio</button>
+</div>

@@ -48,7 +48,11 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
     this.answer3 = arr[0].answer3
   }
 
-  this.setQuestion(this.questionArray)
+  this.setUsernameAndPassword = () => {
+    console.log(`SETTING - username: ${this.username} | password: ${this.password}`);
+    this.usernameAndPasswordCreated = true;
+    this.setQuestion(this.questionArray)
+  }
 
   // Switches to next tree image
   this.incrementTree = () => {
