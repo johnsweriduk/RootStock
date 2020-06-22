@@ -2,29 +2,37 @@
 app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
   this.errorMessage = false;
 
-  let credentials = {
+  this.credentials = {
     username: null,
     password: null
   };
 
   this.login = () => {
-    
-    credentials.username = $scope.credentials.username;
-    credentials.password = $scope.credentials.password;
-
+    console.log(this.credentials);
     $http({
       method: "POST",
       url: '/admin/session',
-      data: credentials
+      data: this.credentials
     }).then(response => {
       if(response.data.error){
         this.errorMessage = true;
         $scope.errorMessage = response.data.error;
       } else {
         this.errorMessage = false;
+        $scope.user = response.data;
+        $http({
+          method: "GET",
+          url: '/admin/portfolio/' + response.data.portfolioId
+        })
+        .then(response => {
+          $scope.portfolio = response.data
+        },
+        error => {
+
+        })
       }
       console.log(response)
-    })
+    });
   };//end of function
   
 }]);
