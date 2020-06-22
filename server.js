@@ -28,6 +28,9 @@ app.use('/admin/user', userController);
 const sessionController = require('./controllers/session_controller.js');
 app.use('/admin/session', sessionController);
 
+const stockController = require('./controllers/stock_controller.js');
+app.use('/admin/stock', stockController);
+
 // Redirect to angular
 app.get('*', function(req, res) {
     res.sendfile('./public/index.html')

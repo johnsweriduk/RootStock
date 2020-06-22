@@ -1,0 +1,132 @@
+/* GLOBAL STYLES */
+* {
+  font-family: serif;
+}
+
+
+
+/* STOCK TICKER STYLES */
+/* https://htmleditor.w3schools.in/?filename=html_css_scrolling_text_using_css */
+.animated-ticker {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: #fefefe;
+    color: #333;
+    border: 1px solid #4a4a4a;
+}
+
+.animated-ticker p {
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 3s linear infinite;
+    -webkit-animation: scroll-left 3s linear infinite;
+    animation: scroll-left 30s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* SIGNUP-VIEW STYLES */
+.signup-container {
+  background: #E7E8E9;
+  width: 80%;
+  min-height: 75vh;
+  margin: 100px auto;
+  padding: 50px 100px;
+  color: #168593;
+  border-radius: 10px;
+}
+
+.welcome-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  background: #168593;
+  color: ivory;
+  padding-left: 25px;
+}
+
+.welcome-message span {
+  font-style: italic;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-top: 10px;
+}
+
+.question {
+  font-size: 3em;
+}
+
+.response-container {
+
+  display: flex;
+}
+
+.answer-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  min-width: 20%;
+}
+
+.answer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.portfolio-button {
+  background: #168593;
+  color: ivory;
+  padding-left: 15px;
+  border-radius: 3px;
+}
+
+.portfolio-button:hover {
+  cursor: pointer
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}

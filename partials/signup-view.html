@@ -1,1 +1,22 @@
-signup
+<div class="signup-container">
+  <div class="welcome-message">Welcome to <span>rootStock</span></div>
+  <div ng-click="ctrl.dev = !ctrl.dev">[CLICK HERE FOR EXTRA DEV TESTING INFO]</div>
+  <h2 ng-show="ctrl.dev">DEV:: Question Points: {{ctrl.questionPoints}}</h2>
+  <h2 ng-show="ctrl.dev">DEV:: Portfolio Type: {{ctrl.portfolioType}}</h2>
+  <div class="questionnaire">
+    <div class="question">{{ctrl.question}}</div>
+    <div class="response-container">
+      <div class="answer-container">
+        <div ng-show="ctrl.portfolioType" ng-click="ctrl.generatePortfolio()" class="portfolio-button" >Generate Portfolio</div>
+        <input ng-show="ctrl.portfolioType" placeholder="username" type="text" ng-model="ctrl.username">
+        <input ng-show="ctrl.portfolioType" placeholder="password" type="text" ng-model="ctrl.password">
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(1)">{{ctrl.answer1}}</div>
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(2)">{{ctrl.answer2}}</div>
+        <div class="answer" ng-click="ctrl.advanceQuestionSet(3)">{{ctrl.answer3}}</div>
+      </div>
+      <div class="image-container">
+        <img ng-src="images/signup-tree-{{ctrl.treeSrc}}.png">
+      </div>
+    </div>
+  </div>
+</div>
