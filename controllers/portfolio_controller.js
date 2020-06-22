@@ -27,11 +27,15 @@ router.put('/:id', (req, res) => {
 
 router.put('/:id/:searchType', (req, res) => {
     const searchType = req.params.searchType;
-    Portfolio.findById(
-        req.params.id,
-        { new: true },
+    Portfolio.findOne(
+        {_id: req.params.id},
         (err, foundPortfolio) => {
-            foundPortfolio[searchType] = req.body;
+            foundPortfolio[searchType] = [];
+            for(let stock of req.body) {
+                foundPortfolio[searchType].unshift(stock);
+            }
+            console.log(searchType);
+            console.log(foundPortfolio[searchType]);
             foundPortfolio.save();
             res.json(foundPortfolio);
         }
