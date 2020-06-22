@@ -1,13 +1,12 @@
 /* NAV STYLES TODO:: Should these go into a *global* styles section in the styles.css?*/
 nav {
-  background-color: #168593;
+  background-color: #EDFEFF;
   display: flex;
-  margin-bottom: 20px;
 }
 
 nav h2 {
   margin: 0 0 0 20px;
-  color: #E7E8E9;
+  color: black;
 }
 
 .nav-buttons {
@@ -19,5 +18,5 @@ nav h2 {
 
 .nav-buttons a {
   margin: 10px;
-  color: #E7E8E9;
+  color: black;
 }
