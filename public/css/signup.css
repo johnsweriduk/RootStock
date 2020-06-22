@@ -33,7 +33,6 @@
 }
 
 .response-container {
-
   display: flex;
 }
 
@@ -55,7 +54,7 @@
   color: ivory;
   padding-left: 15px;
   border-radius: 3px;
-  width: 40%;
+  width: 40%
 }
 
 .portfolio-button:hover {
