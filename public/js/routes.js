@@ -5,7 +5,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Homepage
     $routeProvider.when('/', {
         templateUrl: 'partials/main-view.html',
-        controller: 'MainController',
+        controller: 'HomepageController',
         controllerAs: 'ctrl'
     });
 
