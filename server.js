@@ -47,7 +47,7 @@ db.on('connected', () => console.log('mongo connected: ', process.env.MONGODB_UR
 db.on('disconnected', () => console.log('mongo disconnected'));
 
 // uncomment to wipe database
-//db.dropDatabase(console.log('dropped'));
+// db.dropDatabase(console.log('dropped'));
 
 // Listener
 app.listen(process.env.PORT, () => {
