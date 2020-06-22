@@ -10,7 +10,8 @@ const portfolioSchema = new mongoose.Schema({
     conservativePercent: { type: Number },
     moderatePercent: { type: Number },
     aggressivePercent: { type: Number },
-    portfolioType: { type: String }
+    portfolioType: { type: String },
+    investmentAmount: { type: Number }
 });
 
 const Portfolio = mongoose.model(`Portfolio`, portfolioSchema);
