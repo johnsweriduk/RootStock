@@ -25,6 +25,19 @@ router.put('/:id', (req, res) => {
     );
 });
 
+router.put('/:id/:searchType', (req, res) => {
+    const searchType = req.params.searchType;
+    Portfolio.findById(
+        req.params.id,
+        { new: true },
+        (err, foundPortfolio) => {
+            foundPortfolio[searchType] = req.body;
+            foundPortfolio.save();
+            res.json(foundPortfolio);
+        }
+    );
+});
+
 router.get('/', (req, res) => {
     Portfolio.find({}, (err, foundPortfolio) => {
         res.json(foundPortfolio);
