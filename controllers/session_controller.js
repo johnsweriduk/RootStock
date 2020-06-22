@@ -10,8 +10,8 @@ router.post('/', (req, res) => {
                 error :'Username and password combination does not match.'
             });
         } else {
-            const doesPasswordMath = bcrypt.compareSync(req.body.password, foundUser.password);
-            if(doesPasswordMath){
+            const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password);
+            if(doesPasswordMatch){
                 req.session.user = foundUser;
                 res.json(foundUser)
             } else {
@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
                 });
             }
         }
-    })
+    });
 });
 
 router.get('/', (req, res) => {
@@ -33,6 +33,6 @@ router.delete('/', (req, res) => {
             destroyed:true
         });
     })
-})
+});
 
 module.exports = router;
