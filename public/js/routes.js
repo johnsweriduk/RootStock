@@ -19,7 +19,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Login
     $routeProvider.when('/login', {
         templateUrl: 'partials/login-view.html',
-        controller: 'MainController',
+        controller: 'LoginController',
         controllerAs: 'ctrl'
     });
 
