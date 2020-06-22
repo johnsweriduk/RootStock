@@ -7,6 +7,7 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
     this.searchType = $routeParams.searchType;
 
     this.getUser = () => {
+        console.log($scope);
         $http({
             method: 'GET',
             url: '/admin/session'
@@ -14,20 +15,19 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
             response => {
                 $scope.user = response.data;
                 console.log('test');
-                    const portfolioId = response.data.portfolioId;
-                    $http({
-                        method: 'GET',
-                        url: '/admin/portfolio/' + portfolioId
-                    })
-                        .then(
-                            response => {
-                                $scope.portfolio = response.data;
-                            },
-                            error => {
+                const portfolioId = response.data.portfolioId;
+                $http({
+                    method: 'GET',
+                    url: '/admin/portfolio/' + portfolioId
+                })
+                .then(
+                    response => {
+                        $scope.portfolio = response.data;
+                    },
+                    error => {
 
-                            }
-                        )
-                }
+                    }
+                );
             },
             error => {
 
@@ -98,7 +98,8 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
         if(this.addedStocks.length < 10) {
             return;
         }
-        const portfolioId = $scope.portfolio._id;
+        console.log($scope.portfolio);
+        const portfolioId = $scope.portfolio[0]._id;
         const portfolioInvestment = $scope.portfolio.investmentAmount;
         const investmentPercent = $scope.portfolio[this.searchType + 'Percent'];
         const investmentAmount = portfolioInvestment * investmentPercent / 100;
@@ -107,8 +108,8 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
         for(let stock of this.addedStocks) {
             newPortfolio.unshift({
                 ticker: stock.symbol,
-                shares: investmentAmount / 10 / stock.price,
-                price: stock.price
+                shares: investmentAmount / 10 / stock.latestPrice,
+                price: stock.latestPrice
             });
         }
         $http({
@@ -124,7 +125,6 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
             }
         );
     };
-
     this.getUser();
     this.getStocks();
 }]);
