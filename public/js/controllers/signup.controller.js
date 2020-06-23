@@ -11,7 +11,7 @@
 
 
 // Handles the views for signup
-app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
+app.controller('SignupController', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
   this.treeSrc = 1;
   this.questionPoints = 0;
@@ -140,7 +140,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
           portfolioId: this.newPortfolioId,
         }
       }).then(response => {
-
+        $location.path("/portfolio")
       })
     }, error => {
       console.log(error);

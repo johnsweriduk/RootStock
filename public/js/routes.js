@@ -57,7 +57,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controllerAs: 'ctrl'
     });
 
-    //Settings 
+    //Settings
     $routeProvider.when('/settings', {
         templateUrl: 'partials/settings-view.html',
         controller: 'SettingsController',
