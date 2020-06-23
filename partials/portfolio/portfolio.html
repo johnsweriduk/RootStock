@@ -7,8 +7,15 @@
       <div class="portfolio-card-tag conservative">{{portfolio[0].conservativePercent}}%</div>
       <div class="portfolio-card">
         <p>Large Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].conservativePercent * .01)}}</p>
+        <div class="portfolio-card-titles">
+          <span>Name</span>
+          <span>Price</span>
+        </div>
         <div ng-repeat="stock in portfolio[0].conservative" class="portfolio-repeat">
-          <div class="repeated-stock"><span>Ticker:</span> {{stock.ticker}} --- <span>Price:</span> {{stock.price}}</div>
+          <div class="stock-info-container">
+            <span>{{stock.ticker}}</span>
+            <span>{{stock.price}}</span>
+          </div>
           <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/conservative">Search for Conservative Stocks</a>
@@ -18,8 +25,15 @@
       <div class="portfolio-card-tag moderate">{{portfolio[0].moderatePercent}}%</div>
       <div class="portfolio-card">
         <p>Mid Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].moderatePercent * .01)}} </p>
+        <div class="portfolio-card-titles">
+          <span>Name</span>
+          <span>Price</span>
+        </div>
         <div ng-repeat="stock in portfolio[0].moderate" class="portfolio-repeat">
-          <div class="repeated-stock"><span>Ticker:</span> {{stock.ticker}} --- <span>Price:</span> {{stock.price}}</div>
+          <div class="stock-info-container">
+            <span>{{stock.ticker}}</span>
+            <span>{{stock.price}}</span>
+          </div>
           <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/moderate">Search for Moderate Stocks</a>
@@ -29,8 +43,15 @@
       <div class="portfolio-card-tag aggressive">{{portfolio[0].aggressivePercent}}%</div>
       <div class="portfolio-card">
         <p>Small Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].aggressivePercent * .01)}}</p>
+        <div class="portfolio-card-titles">
+          <span>Name</span>
+          <span>Price</span>
+        </div>
         <div ng-repeat="stock in portfolio[0].aggressive" class="portfolio-repeat">
-          <div class="repeated-stock"><span>Ticker:</span> {{stock.ticker}} --- <span>Price:</span> {{stock.price}}</div>
+          <div class="stock-info-container">
+            <span>{{stock.ticker}}</span>
+          <span>{{stock.price}}</span>
+          </div>
           <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/aggressive">Search for Aggressive Stocks</a>
