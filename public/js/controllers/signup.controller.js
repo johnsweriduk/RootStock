@@ -112,12 +112,8 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
         aggressivePercent: this.aggressivePercent,
       }
     }).then(response => {
-      // console.log('portfolio: ', response);
       this.newPortfolioId = response.data._id
       this.portfolioType = ''
-      // console.log('username:', this.username);
-      // console.log('password:', this.password);
-      // console.log('portfolio id:', this.newPortfolioId);
       $http({
         method: 'POST',
         url: '/admin/user',
@@ -128,7 +124,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
           portfolioId: this.newPortfolioId,
         }
       }).then(response => {
-        // console.log('user: ', response);
+        
       })
     }, error => {
       console.log(error);

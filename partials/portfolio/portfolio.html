@@ -1,1 +1,37 @@
-<h1>PORTFOLIO:</h1>
+<div class="portfolio-container">
+  <div class="portfolio-amount">
+    Portfolio Amount: <span>${{portfolio[0].investmentAmount}}</span>
+  </div>
+  <div class="portfolio-card-container">
+    <div class="">
+      <div class="portfolio-card-tag conservative">{{portfolio[0].conservativePercent}}%</div>
+      <div class="portfolio-card">
+        <p>Large Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].conservativePercent * .01)}}</p>
+        <div ng-repeat="stock in portfolio[0].conservative" class="">
+          Ticker: {{stock.ticker}} Price: {{stock.price}}
+        </div>
+        <a href="/search/conservative">Search for Conservative Stocks</a>
+      </div>
+    </div>
+    <div class="">
+      <div class="portfolio-card-tag moderate">{{portfolio[0].moderatePercent}}%</div>
+      <div class="portfolio-card">
+        <p>Mid Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].moderatePercent * .01)}} </p>
+        <div ng-repeat="stock in portfolio[0].moderate" class="">
+          Ticker: {{stock.ticker}} Price: {{stock.price}}
+        </div>
+        <a href="/search/moderate">Search for Moderate Stocks</a>
+      </div>
+    </div>
+    <div class="">
+      <div class="portfolio-card-tag aggressive">{{portfolio[0].aggressivePercent}}%</div>
+      <div class="portfolio-card">
+        <p>Small Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].aggressivePercent * .01)}}</p>
+        <div ng-repeat="stock in portfolio[0].aggressive" class="">
+          Ticker: {{stock.ticker}} Price: {{stock.price}}
+        </div>
+        <a href="/search/aggressive">Search for Aggressive Stocks</a>
+      </div>
+    </div>
+  </div>
+</div>
