@@ -1,8 +1,8 @@
 
   <form ng-submit="ctrl.login()" autocomplete="off">
 
-    <input ng-model="credentials.username" type="text"  name="username">
-    <input ng-model="credentials.password" type="password"  name="password">
+    <input ng-model="ctrl.credentials.username" type="text"  name="username">
+    <input ng-model="ctrl.credentials.password" type="password"  name="password">
     <button type="submit">Submit</button>
     <div ng-if="ctrl.errorMessage">
       <span class="error-message">{{ errorMessage }}</span>
