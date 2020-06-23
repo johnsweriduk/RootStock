@@ -1,9 +1,8 @@
 <ng-include src="'partials/global/nav.html'"></ng-include>
 <div class="signup-container">
   <div class="welcome-message">Welcome to <span>rootStock</span></div>
-  <div ng-click="ctrl.dev = !ctrl.dev">[CLICK HERE FOR EXTRA DEV TESTING INFO]</div>
-  <div ng-show="ctrl.dev" ng-include="'partials/signup/dev.html'"></div>
-  <div class="questionnaire">
+  <div ng-hide="ctrl.questionnaireStarted" ng-include="'partials/signup/questionnaire-intro.html'"></div>
+  <div ng-show="ctrl.questionnaireStarted" class="questionnaire">
     <div class="question">{{ctrl.question}}</div>
     <div class="response-container">
       <div class="answer-container">

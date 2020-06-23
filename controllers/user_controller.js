@@ -26,6 +26,13 @@ router.get('/', (req, res) => {
   })
 })
 
+router.get('/:username', (req, res) => {
+  User.find({username: req.params.username}, (error, foundUser) => {
+    console.log(foundUser);
+    res.json(foundUser)
+  })
+})
+
 router.delete('/:id', (req, res) => {
     User.findByIdAndRemove(req.params.id, (err, deletedUser) => {
         res.json(deletedUser);
