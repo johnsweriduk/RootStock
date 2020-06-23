@@ -4,6 +4,9 @@ div#stock-view {
     background: #fff;
     box-shadow: 0px 0px 22px black;
     padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 #stock-chart {
     height: 400px;
