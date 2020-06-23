@@ -36,7 +36,7 @@ router.get('/:searchType', (req, res) => {
         }
         console.log(stocks.length);
         res.json(stocks);
-    })
+    });
 });
 
 module.exports = router;

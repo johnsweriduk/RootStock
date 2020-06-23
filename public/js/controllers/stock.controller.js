@@ -2,10 +2,7 @@
 
 // Handles the views for stocks
 app.controller('StockController', ['$scope', '$http', function($scope, $http) {
-
-  this.testKey = 'Tpk_534e8b694727472eaf1972c35851bc0e'
-
-  this.findStock = () => {
+  /*this.findStock = () => {
     this.stockInput = this.stockInput.toUpperCase();
     // basic input authentication
     if (this.stockInput.length > 5 || this.stockInput.length < 3) {
@@ -36,7 +33,9 @@ app.controller('StockController', ['$scope', '$http', function($scope, $http) {
       }).catch( err => console.error('Catch:', err )) // something wrong with promise
     }
     this.stockInput = ''
-  }
-
+  }*/
+    this.closeModal = () => {
+        $scope.stockModal = '';
+    }
 
 }]);

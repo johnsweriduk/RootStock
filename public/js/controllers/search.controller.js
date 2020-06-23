@@ -125,6 +125,7 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
             }
         );
     };
+    $scope.clickedSymbol = 'NIO';
     this.getUser();
     this.getStocks();
 }]);

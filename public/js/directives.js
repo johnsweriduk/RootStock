@@ -1,8 +1,11 @@
-app.directive('stock-modal', function(){
+app.directive('stockModal', function(){
     return {
         restrict: 'E', // E=element, A=attribute, C=class, M=comment, can be combined
-        templateUrl: 'global/stock-view-modal.html', //template to replace directive element
-        controller: 'StockController',
-        controllerAs: 'ctrl' //how it should be instantiated (Controller as ctrl)
+        templateUrl: 'partials/global/stock-view-modal.html', //template to replace directive element
+        controller: 'SearchController',
+        controllerAs: 'ctrl', //how it should be instantiated (Controller as ctrl)
+        scope: {
+            symbol: '=symbol'
+        }
     };
 });
