@@ -9,8 +9,6 @@ app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
 
   this.login = () => {
     console.log(this.credentials);
-    this.credentials.username = $scope.credentials.username;
-    this.credentials.password = $scope.credentials.password;
 
     $http({
       method: "POST",
@@ -19,7 +17,7 @@ app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
     }).then(response => {
       if(response.data.error){
         this.errorMessage = true;
-        $scope.errorMessage = response.data.error;
+        this.errorMessage = response.data.error;
       } else {
         this.errorMessage = false;
         $scope.user = response.data;
@@ -37,5 +35,4 @@ app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
       console.log(response)
     });
   };//end of function
-  
 }]);

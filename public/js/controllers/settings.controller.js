@@ -3,13 +3,6 @@
 // }]);
 
 app.controller('SettingsController', ['$http','$scope', '$location', function($http, $scope, $location) {
-$scope.amount = null;
-this.data;
-
-// $http({
-  
-// })
-
 
  $http({ 
    method: 'GET', 
@@ -50,18 +43,18 @@ this.data;
 
   this.resetMarketCap = (marketCap) => {
     console.log('resetMarketCap');
-    console.log(marketCap)
-    console.log(this.data[0]._id)
+    console.log(marketCap);
+    console.log(this.data[0]._id);
     $http({
       method: 'POST',
       url: `/admin/portfolio/resetMarketCap/${this.data[0]._id}`,
       data: {
-        marketCap
+        type: marketCap
       }
     }).then(response => {
       console.log(response);
     })
-  }
+  };
 
   this.resetPortfolio = () => {
     console.log('resetPortfolio');
