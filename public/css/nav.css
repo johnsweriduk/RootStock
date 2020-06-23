@@ -2,7 +2,7 @@
 nav {
   background-color: #EDFEFF;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   height: 100px;
 }
@@ -17,6 +17,11 @@ nav {
   margin-left: 40px;
   color: black;
   font-size: 4em;
+  text-decoration: none;
+}
+
+.nav-logo a:hover {
+  text-decoration: underline;
 }
 
 .nav-logo img {
@@ -32,6 +37,5 @@ nav {
 }
 
 .nav-buttons a {
-  color: black;
-  padding: 10px;
+  margin: 0 8px;
 }

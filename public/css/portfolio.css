@@ -39,22 +39,21 @@
 
 .portfolio-card p {
   font-weight: bold;
-  font-size: .8vw;
+  font-size: 1vw;
   text-align: center;
 }
 
+.portfolio-repeat {
+  display: flex;
+}
+
 .repeated-stock {
-  font-size: 1.2vw;
+  font-size: 1vw;
   padding-left: 10px;
 }
 
 .repeated-stock span {
   font-weight: bold;
-}
-
-.portfolio-search {
-  margin: 20px auto;
-  font-size: 1.5vw;
 }
 
 .conservative {
