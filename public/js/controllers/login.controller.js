@@ -9,6 +9,9 @@ app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
 
   this.login = () => {
     console.log(this.credentials);
+    this.credentials.username = $scope.credentials.username;
+    this.credentials.password = $scope.credentials.password;
+
     $http({
       method: "POST",
       url: '/admin/session',

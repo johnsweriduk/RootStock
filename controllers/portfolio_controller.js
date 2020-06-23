@@ -54,4 +54,63 @@ router.get('/:id', (req, res) => {
    });
 });
 
+router.post('/modify/:id', (req, res) => {
+    // console.log(req.params.id);
+
+    console.log(req.params);
+    console.log(req.body);
+
+    // console.log(req.body.investmentAmount);
+    Portfolio.update({
+        _id: req.params.id}, 
+        {investmentAmount: req.body.investmentAmount}, (error, updatedPortfolio) => {
+            console.log(updatedPortfolio);
+            res.json(updatedPortfolio);
+        
+    })
+})
+
+router.post('/resetMarketCap/:id', (req, res) => {
+    // console.log(req.params.id);
+
+    console.log(req.params);
+    console.log(req.body);
+    const marketCap = req.body.marketCap;
+    // console.log(req.body.investmentAmount);
+    Portfolio.update({
+        _id: req.params.id}, 
+        { marketCap: [] }, (error, updatedPortfolio) => {
+            console.log(updatedPortfolio);
+            res.json(updatedPortfolio);
+        
+    })
+})
+
+router.post('/resetPortfolio/:id', (req, res) => {
+    console.log(req.params._id);
+    Portfolio.update({
+        _id: req.params.id}, 
+        { 
+          conservativePercent: 0, 
+          moderatePercent: 0,
+          aggressivePercent: 0,
+          portfolioType: 'None'
+        },  (error, updatedPortfolio) => {
+            console.log(updatedPortfolio);
+            res.json(updatedPortfolio);
+        
+    })
+})
+
+
+// conservativePercent: { type: Number },
+// moderatePercent: { type: Number },
+// aggressivePercent: { type: Number },
+// portfolioType: { type: String },
+// investmentAmount: { type: Number }
+
+
+
+
+
 module.exports = router;

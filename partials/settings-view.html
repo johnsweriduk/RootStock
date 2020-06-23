@@ -1,0 +1,29 @@
+ <div >
+  <form >
+    Change the investment amount:
+    <br>
+    <input ng-model="amount" type="text">
+    <button ng-click="ctrl.updateInvestment()" type='submit'> Submit</button>
+  </form>
+
+  <form>
+    Reset individual portfolios:
+    <br>
+    <button ng-click="ctrl.resetMarketCap('conservative')">Reset Large cap</button>
+    <button  ng-click="ctrl.resetMarketCap('moderate')">Reset Mid cap</button>
+    <button  ng-click="ctrl.resetMarketCap('aggressive')">Reset Small cap</button>
+  </form>
+
+  <form>
+    Reset entire portfolio:
+    <br>
+    <button ng-click="ctrl.resetPortfolio()">Reset</button>
+  </form>
+
+  <form>
+    Delete account:
+    <br>
+    <button ng-click="ctrl.deleteAccount()">Delete</button>
+  </form>
+
+</div>

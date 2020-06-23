@@ -4,8 +4,10 @@ const User = require('../models/user.js');
 const bcrypt = require('bcrypt');
 
 router.post('/', (req, res) => {
+    console.log(req.body)
     User.findOne({ username:req.body.username }, (error, foundUser) => {
         if(foundUser === null){
+            console.log(error)
             res.json({
                 error :'Username and password combination does not match.'
             });
@@ -15,6 +17,7 @@ router.post('/', (req, res) => {
                 req.session.user = foundUser;
                 res.json(foundUser)
             } else {
+                console.log(error)
                 res.json({
                     error :'Username and password combination does not match.'
                 });
@@ -24,6 +27,7 @@ router.post('/', (req, res) => {
 });
 
 router.get('/', (req, res) => {
+    console.log(req.session)
     res.json(req.session.user);
 });
 

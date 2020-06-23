@@ -50,9 +50,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controller: 'SearchController',
         controllerAs: 'ctrl'
     });
+
     $routeProvider.when('/search/:searchType', {
         templateUrl: 'partials/search-view.html',
         controller: 'SearchController',
+        controllerAs: 'ctrl'
+    });
+
+    //Settings 
+    $routeProvider.when('/settings', {
+        templateUrl: 'partials/settings-view.html',
+        controller: 'SettingsController',
         controllerAs: 'ctrl'
     });
 }]);
