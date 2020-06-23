@@ -1,4 +1,4 @@
-
+<ng-include src="'partials/global/nav.html'"></ng-include>
   <form ng-submit="ctrl.login()" autocomplete="off">
 
     <input ng-model="ctrl.credentials.username" type="text"  name="username">
@@ -8,5 +8,4 @@
       <span class="error-message">{{ errorMessage }}</span>
     </div>
   </form>
-  
-
+<ng-include src="'partials/global/footer.html'"></ng-include>

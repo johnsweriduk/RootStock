@@ -1,0 +1,54 @@
+/* PORTFOLIO STYLES */
+
+.portfolio-container {
+  height: 800px;
+  width: 80%;
+  margin: 0 auto;
+  display; flex;
+  flex-direction: column;
+}
+
+.portfolio-amount {
+  text-align: center;
+  font-size: 3em;
+}
+
+.portfolio-amount span {
+  color: green;
+}
+
+.portfolio-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-card-tag {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portfolio-card {
+  border: 1px solid #168593;
+  width: 17vw;
+  height: 500px;
+  background: #EDFEFF;
+}
+
+.portfolio-card p {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.conservative {
+  color: blue;
+}
+
+.moderate {
+  color: orange;
+}
+
+.aggressive {
+  color: red;
+}
