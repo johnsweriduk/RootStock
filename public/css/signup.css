@@ -1,20 +1,19 @@
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  background-color: #E7E8E9;
   width: 80%;
   height: 800px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 50px 100px;
-  color: #168593;
+  background-color: #168593;
   border-radius: 10px;
 }
 
 .welcome-message {
   font-family: 'Playfair Display', serif;
   font-size: 5em;
-  background: #168593;
-  color: ivory;
+  color: white;
   padding-left: 25px;
+  border-radius: 5px;
 }
 
 .welcome-message span {
@@ -23,13 +22,13 @@
 
 .questionnaire-intro-header {
   text-align: center;
-  color: #168593;
+  color: white;
   font-size: 3em;
 }
 
 .questionnaire-intro-text {
   text-align: left;
-  color: #168593;
+  color: white;
   font-size: 2em;
 }
 
@@ -62,8 +61,8 @@
 }
 
 .portfolio-button {
-  background: #168593;
-  color: ivory;
+  background: white;
+  color: #168593;
   padding-left: 15px;
   border-radius: 3px;
   width: 40%

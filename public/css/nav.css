@@ -2,21 +2,41 @@
 nav {
   background-color: #EDFEFF;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
 }
 
-nav h2 {
-  margin: 0 0 0 20px;
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-logo a {
+  margin-left: 40px;
   color: black;
+  font-size: 4em;
+  text-decoration: none;
+  font-family: 'Rasa'
+}
+
+.nav-logo a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 60px;
 }
 
 .nav-buttons {
   display: flex;
   align-items: center;
-  font-size: 1.5em;
-  margin-right: 20px;
+  font-size: 2em;
+  margin-right: 40px;
 }
 
 .nav-buttons a {
-  margin: 10px;
-  color: black;
+  margin: 0 8px;
 }
