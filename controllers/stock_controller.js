@@ -39,4 +39,11 @@ router.get('/:searchType', (req, res) => {
     })
 });
 
+router.get('/historical/:symbol', (req, res) => {
+    const symbol = req.params.symbol;
+    const url = 'https://sandbox.iexapis.com/stable/stock/' + symbol + '/chart/1m/?token=' + process.env.TESTKEY;
+    request(url, (err, response, body) => {
+        res.json(JSON.parse(body));
+    });
+});
 module.exports = router;
