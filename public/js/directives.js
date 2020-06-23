@@ -1,4 +1,4 @@
-app.directive('stock-modal', function(){
+app.directive('stockModal', function(){
     return {
         restrict: 'E', // E=element, A=attribute, C=class, M=comment, can be combined
         templateUrl: 'global/stock-view-modal.html', //template to replace directive element
@@ -6,7 +6,7 @@ app.directive('stock-modal', function(){
         controllerAs: 'ctrl' //how it should be instantiated (Controller as ctrl)
     };
 });
-app.directive('rootstock-nav', function(){
+app.directive('rootstockNav', function(){
     return {
         restrict: 'E', // E=element, A=attribute, C=class, M=comment, can be combined
         templateUrl: 'global/nav.html', //template to replace directive element
