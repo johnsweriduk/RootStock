@@ -68,39 +68,37 @@ router.post('/modify/:id', (req, res) => {
             res.json(updatedPortfolio);
         
     })
-})
+});
 
 router.post('/resetMarketCap/:id', (req, res) => {
     // console.log(req.params.id);
 
     console.log(req.params);
     console.log(req.body);
-    const marketCap = req.body.marketCap;
-    // console.log(req.body.investmentAmount);
-    Portfolio.update({
-        _id: req.params.id}, 
-        { marketCap: [] }, (error, updatedPortfolio) => {
-            console.log(updatedPortfolio);
-            res.json(updatedPortfolio);
+    const marketCap = req.body.type;
+
+    Portfolio.findOne({
+        _id: req.params.id}, (error, foundPortfolio) => {
+            foundPortfolio[marketCap] = [];
+            foundPortfolio.save();
+            res.json(foundPortfolio);
         
     })
-})
+});
 
 router.post('/resetPortfolio/:id', (req, res) => {
     console.log(req.params._id);
     Portfolio.update({
         _id: req.params.id}, 
         { 
-          conservativePercent: 0, 
-          moderatePercent: 0,
-          aggressivePercent: 0,
-          portfolioType: 'None'
+            conservative: [],
+            moderate: [],
+            aggressive: []
         },  (error, updatedPortfolio) => {
             console.log(updatedPortfolio);
             res.json(updatedPortfolio);
-        
     })
-})
+});
 
 
 // conservativePercent: { type: Number },
