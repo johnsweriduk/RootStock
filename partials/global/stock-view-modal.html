@@ -1,16 +1,6 @@
-<div id="stock-view" class="modal">
-    <div class="title">
-        Stock Name Here
-    </div>
+<div id="stock-view" class="modal" ng-show="stockCtrl.showModal">
     <div class="chart">
         <div id="stock-chart"></div>
     </div>
-    <div class="data">
-        Today's date:
-        Open price
-        High price
-        low price
-        close price
-        volume traded
-    </div>
+    <button ng-click="stockCtrl.closeModal()">Back</button>
 </div>
