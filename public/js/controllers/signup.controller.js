@@ -112,7 +112,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
         aggressivePercent: this.aggressivePercent,
       }
     }).then(response => {
-      console.log('portfolio: ', response);
+      // console.log('portfolio: ', response);
       this.newPortfolioId = response.data._id
       this.portfolioType = ''
       // console.log('username:', this.username);
@@ -128,7 +128,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
           portfolioId: this.newPortfolioId,
         }
       }).then(response => {
-        console.log('user: ', response);
+        // console.log('user: ', response);
       })
     }, error => {
       console.log(error);
