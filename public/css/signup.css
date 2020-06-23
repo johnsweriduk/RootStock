@@ -1,6 +1,5 @@
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  background-color: #E7E8E9;
   width: 80%;
   height: 800px;
   margin: 0 auto;
@@ -15,6 +14,7 @@
   background: #168593;
   color: ivory;
   padding-left: 25px;
+  border-radius: 5px;
 }
 
 .welcome-message span {
