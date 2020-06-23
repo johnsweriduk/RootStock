@@ -69,7 +69,6 @@ app.controller('SettingsController', ['$http','$scope', '$location', function($h
   }
 
   this.deleteAccount = () => {
-   
     $http({
       method: 'DELETE',
       url: `/admin/user/${this.data[0]._id}`
