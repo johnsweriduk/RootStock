@@ -5,7 +5,7 @@
 
 .homepage-message-text {
   max-width: 40%;
-  padding: 150px;
+  padding: 50px 150px;
   background: #168593;
   color: #E7E8E9;
 }
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-around;
   background: #EDFEFF;
-  padding: 100px;
+  padding: 60px;
 }
 
 .homepage-card {
