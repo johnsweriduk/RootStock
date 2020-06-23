@@ -29,7 +29,6 @@ app.controller('PortfolioController', ['$scope', '$http', function($scope, $http
           }
       )
   };
-
   this.getUser();
 
 }]);

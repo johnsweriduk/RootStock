@@ -118,7 +118,7 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
             data: newPortfolio
         }).then(
             response => {
-
+                this.submittedStocks = true;
             },
             error => {
 
