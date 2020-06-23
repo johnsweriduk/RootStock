@@ -2,6 +2,7 @@
 .signup-container {
   background-color: #E7E8E9;
   width: 80%;
+  height: 800px;
   margin: 0 auto;
   padding: 50px 100px;
   color: #168593;
@@ -18,6 +19,18 @@
 
 .welcome-message span {
   font-style: italic;
+}
+
+.questionnaire-intro-header {
+  text-align: center;
+  color: #168593;
+  font-size: 3em;
+}
+
+.questionnaire-intro-text {
+  text-align: left;
+  color: #168593;
+  font-size: 2em;
 }
 
 .questionnaire {

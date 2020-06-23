@@ -49,8 +49,24 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
   }
 
   this.setUsernameAndPassword = () => {
-    console.log(`SETTING - username: ${this.username} | password: ${this.password}`);
-    this.usernameAndPasswordCreated = true;
+    if (this.password) {
+      $http({
+        method: 'GET',
+        url: '/admin/user/' + this.username
+      }).then(response => {
+        console.log(response.data);
+        if (response.data.length < 1) {
+          this.usernameAndPasswordCreated = true;
+          console.log(`SETTING - username: ${this.username} | password: ${this.password}`);
+        } else {
+          window.alert('username taken')
+        }
+      }, error => {
+        console.log(error);
+      })
+    } else {
+      window.alert('please input both a username and password')
+    }
   }
 
   this.setInvestment = () => {
@@ -124,7 +140,7 @@ app.controller('SignupController', ['$scope', '$http', function($scope, $http) {
           portfolioId: this.newPortfolioId,
         }
       }).then(response => {
-        
+
       })
     }, error => {
       console.log(error);
