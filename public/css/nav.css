@@ -4,6 +4,16 @@ nav {
   display: flex;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+}
+
 nav h2 {
   margin: 0 0 0 20px;
   color: black;
