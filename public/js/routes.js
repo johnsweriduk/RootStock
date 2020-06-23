@@ -33,7 +33,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Portfolio
     $routeProvider.when('/portfolio', {
         templateUrl: 'partials/portfolio-view.html',
-        controller: 'MainController',
+        controller: 'PortfolioController',
         controllerAs: 'ctrl'
     });
 
