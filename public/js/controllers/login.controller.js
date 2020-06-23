@@ -1,5 +1,5 @@
 // Handles login views
-app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
+app.controller('LoginController', ['$http', '$scope', '$location', function($http, $scope, $location) {
   this.errorMessage = false;
 
   this.credentials = {
@@ -27,6 +27,7 @@ app.controller('LoginController', ['$http', '$scope',  function($http, $scope) {
         })
         .then(response => {
           $scope.portfolio = response.data
+          $location.path('/portfolio');
         },
         error => {
 

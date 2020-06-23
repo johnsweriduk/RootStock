@@ -43,9 +43,9 @@ app.controller('SignupController', ['$scope', '$http', '$location', function($sc
   this.setQuestion = (arr) => {
     console.log('setting question set');
     this.question = arr[0].question,
-    this.answer1 = arr[0].answer1,
-    this.answer2 = arr[0].answer2,
-    this.answer3 = arr[0].answer3
+        this.answer1 = arr[0].answer1,
+        this.answer2 = arr[0].answer2,
+        this.answer3 = arr[0].answer3
   }
 
   this.setUsernameAndPassword = () => {
@@ -120,13 +120,13 @@ app.controller('SignupController', ['$scope', '$http', '$location', function($sc
       method: 'POST',
       url: '/admin/portfolio',
       data:
-      {
-        portfolioType: this.portfolioType,
-        investmentAmount: this.investmentAmount,
-        conservativePercent: this.conservativePercent,
-        moderatePercent: this.moderatePercent,
-        aggressivePercent: this.aggressivePercent,
-      }
+          {
+            portfolioType: this.portfolioType,
+            investmentAmount: this.investmentAmount,
+            conservativePercent: this.conservativePercent,
+            moderatePercent: this.moderatePercent,
+            aggressivePercent: this.aggressivePercent,
+          }
     }).then(response => {
       this.newPortfolioId = response.data._id
       this.portfolioType = ''
@@ -134,11 +134,11 @@ app.controller('SignupController', ['$scope', '$http', '$location', function($sc
         method: 'POST',
         url: '/admin/user',
         data:
-        {
-          username: this.username,
-          password: this.password,
-          portfolioId: this.newPortfolioId,
-        }
+            {
+              username: this.username,
+              password: this.password,
+              portfolioId: this.newPortfolioId,
+            }
       }).then(response => {
         $location.path("/portfolio")
       })
