@@ -77,19 +77,21 @@
 }
 
 .response-container {
-  display: flex;
   flex-direction: column;
   margin-top: 100px;
   align-items: center;
+  padding: 0 100px;
 }
-
+.image-container img {
+  transform: translateY(-100px);
+}
 .answer-container {
   margin-top: 25px;
-  display: flex;
   font-size: 2.3em;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 897px;
+  width: 50%;
+  float: left;
 }
 
 .answer:hover {
@@ -109,10 +111,11 @@
 } */
 
 .image-container {
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 0px;
+  width: 50%;
+  float: left;
 }
 
 #question-btn {
@@ -132,12 +135,12 @@
   height: 240px;
 }
 
-.img-container {
-  position: absolute;
-  top: 460px;
-  left: 325px;
+.questionnaire-text-and-image img {
+  margin-right: 30px;
+  position: relative;
+  top: 59%;
+  transform: translateY(-50%);
 }
-
 .first-paragraph {
   position: absolute;
   width: 1027px;
