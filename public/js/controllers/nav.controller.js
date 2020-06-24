@@ -9,6 +9,9 @@ app.controller('NavController', ['$http','$scope', '$location', function($http, 
             response => {
                 console.log('test');
                 console.log(response);
+                if ($location.path() === "/") {
+                  window.location.reload()
+                }
                 $location.path("/");
             }, error => {
 
