@@ -8,11 +8,12 @@
   padding-left: 125px;
   background: #168593;
   color: white;
-  min-width: 40%;
+  max-width: 45%;
 }
 
 .homepage-message-text span {
   font-size: 4em;
+  line-height: 1.3;
 }
 
 .homepage-message-text p {

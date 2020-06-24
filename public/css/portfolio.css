@@ -6,6 +6,7 @@
   flex-direction: column;
   margin-top: 75px;
   margin-bottom: 200px;
+  min-height: 450px;
 }
 
 .portfolio-amount {
