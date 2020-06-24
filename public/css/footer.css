@@ -3,16 +3,20 @@ footer {
   background-color: #168593;
   height: 225px;
   display: flex;
+  font-family: 'Roboto';
+  color: #E7E8E9;
+}
+a {
+  color:#E7E8E9;
+  text-decoration: none;
 }
 
 .footer-info {
   margin: 10px;
-  color: #E7E8E9;
   min-width: 75%;
 }
 
 .footer-links {
-  color: #E7E8E9;
   display: flex;
   flex-direction: column;
 }
@@ -23,4 +27,8 @@ footer {
 .socials img {
   width: 40px;
   height: 40px;
+}
+
+.footer-title {
+  margin-bottom: 0rem;
 }

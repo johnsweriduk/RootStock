@@ -18,6 +18,7 @@
   font-size: 4em;
   color: white;
   border-radius: 5px;
+  text-align: center;
 }
 
 .welcome-message span {
@@ -29,7 +30,6 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
-    /* border: 2px solid black; */
 }
 
 .questionnaire-text-and-image img {
@@ -73,18 +73,23 @@
 
 .question {
   font-size: 3em;
+  text-align: center;
 }
 
 .response-container {
   display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
 }
 
 .answer-container {
   margin-top: 25px;
   display: flex;
-  flex-direction: column;
   font-size: 2.3em;
-  min-width: 40%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 897px;
 }
 
 .answer:hover {
@@ -109,3 +114,80 @@
   align-items: center;
   padding-left: 50px;
 }
+
+#question-btn {
+  color: white;
+  position: absolute;
+  top: 714px;
+  left: 800px;
+}
+
+.create-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hand-img {
+  height: 240px;
+}
+
+.img-container {
+  position: absolute;
+  top: 460px;
+  left: 325px;
+}
+
+.first-paragraph {
+  position: absolute;
+  width: 1027px;
+  height: 198px;
+  left: 450px;
+  top: 280px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29.55px;
+  line-height: 35px;
+}
+
+.second-paragraph {
+  position: absolute;
+  width: 758px;
+  height: 165px;
+  left: 650px;
+  top: 462px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29.55px;
+  line-height: 35px;
+}
+
+#btn-submit {
+  color: white;
+}
+
+.investment-amount {
+  position: absolute;
+  width: 636px;
+  height: 65px;
+  left: 32%;
+  top: 50%;
+
+  background: #E5E5E5;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#investment-btn {
+  position: absolute;
+  left: 47%;
+  top: 58%;
+  color: white;
+}
+
+
