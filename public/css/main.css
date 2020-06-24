@@ -1,6 +1,7 @@
 /* MAIN PAGE STYLES */
 .homepage-message-container {
   display: flex;
+  margin-top: 100px;
 }
 
 .homepage-message-text {
@@ -40,8 +41,8 @@
   background: white;
   display: flex;
   flex-direction: column;
-  width: 17vw;
-  height: 300px;
+  width: 20vw;
+  height: 325px;
   padding: 3vw;
 }
 
