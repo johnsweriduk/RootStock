@@ -1,305 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b1524f1-9c73-427c-a67a-331154a526c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/portfolio_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/session_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/user_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/portfolio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/account-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/account/account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/account/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/account/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/global/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/global/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/global/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/main-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/portfolio-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/portfolio/portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/portfolio/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/portfolio/stock-banner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/stock-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/stock/stock-search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partials/stock/stock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/skeleton.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/angular/angular-route.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/angular/angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/controllers/portfolioController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/controllers/signupController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/controllers/stockController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-animation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-api-annotations.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-api-rules.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-api.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-area.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-area3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-boxplot.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-bubble-legend.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-bubble-pack.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-bubble.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-bubblepie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-calendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-chord.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-color-scale.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-core.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-csv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-debug.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-depth.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-dragging.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-errorbars.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-export.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-flame.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-gantt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-gauge.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-grid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-guide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hbar3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hbubble.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hbullet.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-heatmap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hfunnel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-history.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-hscatter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-legend.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-line.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-line3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-afg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ago.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-alb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-and.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-are.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-arg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-arm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-aus.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-aut.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-aze.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bdi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ben.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bfa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bgr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bih.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-blr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bol.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bra.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-brn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-btn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-bwa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-caf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-can.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-che.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-chl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-chn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-civ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cmr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cod.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cog.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-col.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cri.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cub.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cyp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-cze.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-deu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-dnk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ecu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-egy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-esp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-espL2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-est.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-eth.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-fin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-fra.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-fraL2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gab.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gbr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gbrL2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-geojson.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gha.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gmb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gnb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-grc.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-gtm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-guf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-guy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-hrv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-hun.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ind.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-irl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-irn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-isl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-isr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ita.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-jpn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-kaz.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ken.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-kor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-kwt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-lao.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-lbr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-lie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ltu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-lux.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-lva.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-mda.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-mex.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-mkd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-mne.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-moz.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-nam.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ncl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-nga.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-nld.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-nor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-nzl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-omn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-pak.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-pan.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-per.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-phl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-png.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-pol.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-prt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-qat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-rou.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-rus.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-rwa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-sen.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-slv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-srb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-sur.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-svk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-svn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-swe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-tha.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-tjk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-topojson.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-tun.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-tur.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-twn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-uga.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ukr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ury.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ak.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_al.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_az.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ca.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_co.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ct.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_dc.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_de.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_fl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ga.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_hi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ia.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_id.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_il.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_in.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ks.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ky.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_la.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ma.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_md.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_me.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_mi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_mn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_mo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ms.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_mt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nc.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ne.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nj.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_nv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ny.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_oh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ok.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_or.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_pa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ri.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_sc.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_sd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_tn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_tx.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_ut.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_va.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_vt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_wa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_wi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_wv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-usa_wy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-uzb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-ven.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-vnm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-world-continents.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-world-countries.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-yem.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-zaf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-zmb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps-zwe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-maps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-multi-guide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-navpie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-nestedpie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-objects.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-pareto.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-patterns.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-piano.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-pie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-pie3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-populationpyramid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-preview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-r.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-radar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-range.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-rankflow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-refresh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-scalableyaxis.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-scalemarkers.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-scatter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-scorecard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-scroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-selection-tool.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-selection.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-stock.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-stream.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-sunburst.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-svg-simple-selection.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-tilemap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-toolbar3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-tooltip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-tree.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-treemap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-varea.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-variwide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vbar3d.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vbullet.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vectorplot.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-venn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vfunnel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-violin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-vline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-waterfall.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-wordcloud.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-xy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-yx.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-zoom-buttons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/modules/zingchart-zoom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/zingchart/zingchart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="9b1524f1-9c73-427c-a67a-331154a526c5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,72 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="53" lean-forward="true" selection-start-column="53" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/angular.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/angular-route.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/signupController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/portfolioController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/stockController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/partials/portfolio/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/global/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/partials/portfolio-view.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -458,6 +102,16 @@
             <path>
               <item name="RootStock" type="b2602c69:ProjectViewProjectNode" />
               <item name="RootStock" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RootStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RootStock" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RootStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RootStock" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -465,6 +119,12 @@
               <item name="RootStock" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
               <item name="global" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RootStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RootStock" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RootStock" type="b2602c69:ProjectViewProjectNode" />
@@ -512,16 +172,16 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\js\zingchart" />
-      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\css" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\js" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials\account" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials\global" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\js\zingchart" />
+      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -552,16 +212,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5436000" />
+    <option name="totallyTimeSpent" value="5449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1088" y="-7" width="1096" height="1896" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12321144" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3069498" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32969603" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.23539421" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -686,15 +345,9 @@
     <entry file="file://$PROJECT_DIR$/partials/account/account.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/stock/stock-purchase.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/portfolio/portfolio-edit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/account/account-edit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/stock/stock-purchase.html" />
+    <entry file="file://$PROJECT_DIR$/partials/portfolio/portfolio-edit.html" />
+    <entry file="file://$PROJECT_DIR$/partials/account/account-edit.html" />
     <entry file="file://$PROJECT_DIR$/partials/stock/stock.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
