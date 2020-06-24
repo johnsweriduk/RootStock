@@ -1,16 +1,21 @@
 /* SIGNUP-VIEW STYLES */
 .signup-container {
-  width: 80%;
-  height: 800px;
-  margin: 60px auto;
-  padding: 50px 50px;
+  width: 90%;
+  height: 750px;
+  margin: 40px auto 60px auto;
+  padding: 30px 50px;
   background-color: #168593;
   border-radius: 10px;
 }
 
+.signup-container input,.button {
+  background: #EDFEFF;
+  font-size: .7em;
+  color: #168593;
+}
+
 .welcome-message {
-  font-family: 'Playfair Display', serif;
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -21,9 +26,10 @@
 }
 
 .questionnaire-text-and-image {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .questionnaire-text-and-image img {
@@ -43,7 +49,8 @@
 .questionnaire-intro-text {
   text-align: left;
   color: white;
-  font-size: 2em;
+  font-size: 1.7em;
+  padding-top: 75px;
 }
 
 .questionnaire-intro-text span {
@@ -55,8 +62,13 @@
   flex-direction: column;
   /* padding-left: 100px; */
   color: white;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.username-and-password-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .question {
@@ -85,17 +97,16 @@
   text-decoration: underline;
 }
 
-.portfolio-button {
+/* .portfolio-button {
   background: white;
   color: #168593;
   padding-left: 15px;
   border-radius: 3px;
-  width: 40%
 }
 
 .portfolio-button:hover {
   cursor: pointer
-}
+} */
 
 .image-container {
   display: flex;
