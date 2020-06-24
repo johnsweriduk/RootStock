@@ -1,9 +1,9 @@
 <div class="stock" ng-repeat="stock in ctrl.stocks" ng-class="{'selected': ctrl.hasAddedStock(stock)}">
     <div class="click" ng-click="ctrl.addStock(stock)">
-        <div class="field columns two">
-            <p>{{ stock.companyName | limitTo: 15 }}</p>
+        <div class="field columns three">
+            <p>{{ stock.companyName | limitTo: 30 }}</p>
         </div>
-        <div class="field columns two">
+        <div class="field columns one">
             <p>{{ stock.symbol }}</p>
         </div>
         <div class="field columns one">
