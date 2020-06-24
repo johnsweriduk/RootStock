@@ -93,7 +93,9 @@ app.controller('SearchController', ['$scope', '$routeParams', '$http', function(
         }
         return false;
     };
-
+    this.closeCompleteModal = () => {
+        this.submittedStocks = false;
+    }
     this.updatePortfolio = () => {
         if(this.addedStocks.length < 10) {
             return;

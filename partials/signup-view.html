@@ -1,7 +1,7 @@
 <rootstock-nav></rootstock-nav>
 <div class="signup-container">
-  <div class="welcome-message">Welcome to <span>RootStock</span></div>
-  <div ng-hide="ctrl.questionnaireStarted" ng-include="'partials/signup/questionnaire-intro.html'"></div>
+  <div class="welcome-message">Welcome to RootStock</div>
+  <div ng-hide="ctrl.questionnaireStarted" ng-include="'partials/signup/questionnaire-intro.html'" class="questionnaire-intro"></div>
   <div ng-show="ctrl.questionnaireStarted" class="questionnaire">
     <div class="question">{{ctrl.question}}</div>
     <div class="response-container">
@@ -9,9 +9,11 @@
         <div ng-show="ctrl.portfolioType" ng-include="'partials/signup/generate-profile.html'" ></div>
         <div ng-hide="ctrl.usernameAndPasswordCreated" ng-include="'partials/signup/username-and-password.html'"></div>
         <div ng-hide="ctrl.investmentAmountCreated" ng-if="ctrl.usernameAndPasswordCreated" ng-include="'partials/signup/investment.html'"></div>
-        <div class="answer" ng-click="ctrl.advanceQuestionSet(1)">{{ctrl.answer1}}</div>
-        <div class="answer" ng-click="ctrl.advanceQuestionSet(2)">{{ctrl.answer2}}</div>
-        <div class="answer" ng-click="ctrl.advanceQuestionSet(3)">{{ctrl.answer3}}</div>
+        <div class="answers-container">
+          <div class="answer" ng-click="ctrl.advanceQuestionSet(1)">{{ctrl.answer1}}</div>
+          <div class="answer" ng-click="ctrl.advanceQuestionSet(2)">{{ctrl.answer2}}</div>
+          <div class="answer" ng-click="ctrl.advanceQuestionSet(3)">{{ctrl.answer3}}</div>
+        </div>
       </div>
       <div ng-show="ctrl.investmentAmountCreated" class="image-container">
         <img ng-src="images/signup-tree-{{ctrl.treeSrc}}.png">

@@ -6,7 +6,7 @@
     <div class="">
       <div class="portfolio-card-tag conservative">{{portfolio[0].conservativePercent}}%</div>
       <div class="portfolio-card">
-        <p>Large Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].conservativePercent * .01)}}</p>
+        <p>Large Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].conservativePercent * .01) | number:2}}</p>
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
@@ -16,7 +16,7 @@
             <span>{{stock.ticker}}</span>
             <span>{{stock.price}}</span>
           </div>
-          <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
+          <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/conservative">Search for Conservative Stocks</a>
       </div>
@@ -24,7 +24,7 @@
     <div class="">
       <div class="portfolio-card-tag moderate">{{portfolio[0].moderatePercent}}%</div>
       <div class="portfolio-card">
-        <p>Mid Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].moderatePercent * .01)}} </p>
+        <p>Mid Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].moderatePercent * .01) | number:2}} </p>
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
@@ -34,7 +34,7 @@
             <span>{{stock.ticker}}</span>
             <span>{{stock.price}}</span>
           </div>
-          <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
+          <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/moderate">Search for Moderate Stocks</a>
       </div>
@@ -42,7 +42,7 @@
     <div class="">
       <div class="portfolio-card-tag aggressive">{{portfolio[0].aggressivePercent}}%</div>
       <div class="portfolio-card">
-        <p>Small Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].aggressivePercent * .01)}}</p>
+        <p>Small Cap Stocks: ${{portfolio[0].investmentAmount * (portfolio[0].aggressivePercent * .01) | number:2}}</p>
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
@@ -52,7 +52,7 @@
             <span>{{stock.ticker}}</span>
           <span>{{stock.price}}</span>
           </div>
-          <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
+          <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>
         <a class="portfolio-search button" href="/search/aggressive">Search for Aggressive Stocks</a>
       </div>
