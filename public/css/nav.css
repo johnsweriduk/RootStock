@@ -9,6 +9,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
+  height: 60px;
 }
 
 .nav-logo {
@@ -20,24 +21,25 @@ nav {
 .nav-logo a {
   margin-left: 40px;
   color: black;
-  font-size: 4em;
+  font-size: 3em;
   text-decoration: none;
-  font-family: 'Rasa'
+  font-family: 'Rasa';
+  text-decoration: none;
+  opacity: .8;
 }
 
 .nav-logo a:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 .nav-logo img {
-  width: 40px;
-  height: 60px;
+  width: 30px;
+  height: 50px;
 }
 
 .nav-buttons {
   display: flex;
   align-items: center;
-  font-size: 2em;
   margin-right: 40px;
 }
 
