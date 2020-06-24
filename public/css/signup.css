@@ -192,5 +192,7 @@
   top: 58%;
   color: white;
 }
-
+.signup-container.ng-scope {
+  margin-top: 110px;
+}
 
