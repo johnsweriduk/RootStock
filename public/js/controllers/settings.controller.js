@@ -4,8 +4,38 @@
 
 app.controller('SettingsController', ['$http','$scope', '$location', function($http, $scope, $location) {
 
- $http({ 
-   method: 'GET', 
+  this.getUser = () => {
+      console.log($scope);
+      $http({
+          method: 'GET',
+          url: '/admin/session'
+      }).then(
+          response => {
+              $scope.user = response.data;
+              console.log('test');
+              const portfolioId = response.data.portfolioId;
+              $http({
+                  method: 'GET',
+                  url: '/admin/portfolio/' + portfolioId
+              })
+                  .then(
+                      response => {
+                          $scope.portfolio = response.data;
+                      },
+                      error => {
+
+                      }
+                  );
+          },
+          error => {
+
+          }
+      )
+  };
+  this.getUser();
+
+ $http({
+   method: 'GET',
    url: "/admin/session"
   }).then(response => {
     console.log(response.data);
@@ -16,7 +46,7 @@ app.controller('SettingsController', ['$http','$scope', '$location', function($h
         method: 'GET',
         url: `/admin/portfolio/${response.data.portfolioId}`
       }).then(response => {
-  
+
         this.data = response.data;
 
         $scope.amount = response.data[0].investmentAmount;
@@ -59,7 +89,7 @@ app.controller('SettingsController', ['$http','$scope', '$location', function($h
   this.resetPortfolio = () => {
     console.log('resetPortfolio');
     console.log(this.data[0]._id)
-   
+
     $http({
       method: 'POST',
       url: `/admin/portfolio/resetPortfolio/${this.data[0]._id}`
@@ -69,7 +99,7 @@ app.controller('SettingsController', ['$http','$scope', '$location', function($h
   }
 
   this.deleteAccount = () => {
-   
+
     $http({
       method: 'DELETE',
       url: `/admin/user/${this.data[0]._id}`
