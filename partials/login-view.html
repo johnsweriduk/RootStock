@@ -1,11 +1,24 @@
 <rootstock-nav></rootstock-nav>
-  <form ng-submit="ctrl.login()" autocomplete="off">
-
-    <input ng-model="ctrl.credentials.username" type="text"  name="username">
-    <input ng-model="ctrl.credentials.password" type="password"  name="password">
-    <button type="submit">Submit</button>
-    <div ng-if="ctrl.errorMessage">
-      <span class="error-message">{{ errorMessage }}</span>
-    </div>
-  </form>
+<div class="login-container">
+  <div class="form-container">
+    <form ng-submit="ctrl.login()" autocomplete="off">
+      <label for="username">
+        Username:
+        <input ng-model="ctrl.credentials.username" type="text"  name="username">
+      </label>
+      
+      <label for="password">
+        Password:
+        <input ng-model="ctrl.credentials.password" type="password"  name="password">
+      </label>
+      
+      <button type="submit">Submit</button>
+      <div ng-if="ctrl.errorMessage">
+        <span class="error-message">{{ errorMessage }}</span>
+      </div>
+    </form>
+  </div>
+  
+</div>
+  
 <ng-include src="'partials/global/footer.html'"></ng-include>
