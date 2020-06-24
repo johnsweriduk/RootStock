@@ -5,7 +5,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Homepage
     $routeProvider.when('/', {
         templateUrl: 'partials/main-view.html',
-        controller: 'MainController',
+        controller: 'HomepageController',
         controllerAs: 'ctrl'
     });
 
@@ -19,7 +19,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Login
     $routeProvider.when('/login', {
         templateUrl: 'partials/login-view.html',
-        controller: 'MainController',
+        controller: 'LoginController',
         controllerAs: 'ctrl'
     });
 
@@ -33,7 +33,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     // Portfolio
     $routeProvider.when('/portfolio', {
         templateUrl: 'partials/portfolio-view.html',
-        controller: 'MainController',
+        controller: 'PortfolioController',
         controllerAs: 'ctrl'
     });
 
@@ -48,6 +48,19 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider.when('/search', {
         templateUrl: 'partials/search-view.html',
         controller: 'SearchController',
+        controllerAs: 'ctrl'
+    });
+
+    $routeProvider.when('/search/:searchType', {
+        templateUrl: 'partials/search-view.html',
+        controller: 'SearchController',
+        controllerAs: 'ctrl'
+    });
+
+    //Settings
+    $routeProvider.when('/settings', {
+        templateUrl: 'partials/settings-view.html',
+        controller: 'SettingsController',
         controllerAs: 'ctrl'
     });
 }]);

@@ -1,0 +1,26 @@
+/* FOOTER STYLES TODO:: Should these go into a *global* styles section in the styles.css?*/
+footer {
+  background-color: #168593;
+  height: 225px;
+  display: flex;
+}
+
+.footer-info {
+  margin: 10px;
+  color: #E7E8E9;
+  min-width: 75%;
+}
+
+.footer-links {
+  color: #E7E8E9;
+  display: flex;
+  flex-direction: column;
+}
+.socials {
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+}

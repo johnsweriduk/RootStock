@@ -1,0 +1,80 @@
+/* SIGNUP-VIEW STYLES */
+.signup-container {
+  width: 80%;
+  height: 800px;
+  margin: 60px auto;
+  padding: 50px 100px;
+  background-color: #168593;
+  border-radius: 10px;
+}
+
+.welcome-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  color: white;
+  padding-left: 25px;
+  border-radius: 5px;
+}
+
+.welcome-message span {
+  font-style: italic;
+}
+
+.questionnaire-intro-header {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+.questionnaire-intro-text {
+  text-align: left;
+  color: white;
+  font-size: 2em;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-top: 10px;
+}
+
+.question {
+  font-size: 3em;
+}
+
+.response-container {
+  display: flex;
+}
+
+.answer-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  min-width: 60%;
+}
+
+.answer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.portfolio-button {
+  background: white;
+  color: #168593;
+  padding-left: 15px;
+  border-radius: 3px;
+  width: 40%
+}
+
+.portfolio-button:hover {
+  cursor: pointer
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}

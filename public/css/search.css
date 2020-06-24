@@ -1,0 +1,52 @@
+.two.columns {
+    width: 16.666667%;
+    margin: 0;
+}
+.stock {
+    display: inline-block;
+    width: 100%;
+}
+.field {
+    position: relative;
+}
+.field p {
+    margin: 0;
+}
+.legend .field {
+    cursor: pointer;
+}
+.legend * {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+.field .filters img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: auto;
+}
+.legend p {
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+}
+.stock p {
+    padding: 7px 0;
+}
+.columns.eight {
+    margin: 0;
+    width: 75%;
+}
+.columns.one {
+    width: 10%;
+    margin: 0;
+}
+.columns.three {
+    width: 23.333333%;
+    margin: 0;
+}
+.selected {
+    background: #f7f7f7;
+}

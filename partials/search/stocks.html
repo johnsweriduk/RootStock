@@ -1,0 +1,22 @@
+<div class="stock" ng-repeat="stock in ctrl.stocks" ng-class="{'selected': ctrl.hasAddedStock(stock)}">
+    <div class="click" ng-click="ctrl.addStock(stock)">
+        <div class="field columns two">
+            <p>{{ stock.companyName | limitTo: 15 }}</p>
+        </div>
+        <div class="field columns two">
+            <p>{{ stock.symbol }}</p>
+        </div>
+        <div class="field columns one">
+            <p>{{ stock.latestPrice | currency : "$"}}</p>
+        </div>
+        <div class="field columns three">
+            <p>{{ stock.marketCap | currency : "$"}}</p>
+        </div>
+        <div class="field columns two">
+            <p>{{ stock.latestUpdate | date: 'mm/dd/yyyy'}}</p>
+        </div>
+    </div>
+    <div class="field columns two">
+        <a class="button" href="#" ng-click="openStockModal(stock.symbol)">View</a>
+    </div>
+</div>

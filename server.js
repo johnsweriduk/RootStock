@@ -28,6 +28,9 @@ app.use('/admin/user', userController);
 const sessionController = require('./controllers/session_controller.js');
 app.use('/admin/session', sessionController);
 
+const stockController = require('./controllers/stock_controller.js');
+app.use('/admin/stock', stockController);
+
 // Redirect to angular
 app.get('*', function(req, res) {
     res.sendfile('./public/index.html')
@@ -44,7 +47,7 @@ db.on('connected', () => console.log('mongo connected: ', process.env.MONGODB_UR
 db.on('disconnected', () => console.log('mongo disconnected'));
 
 // uncomment to wipe database
-//db.dropDatabase(console.log('dropped'));
+// db.dropDatabase(console.log('dropped'));
 
 // Listener
 app.listen(process.env.PORT, () => {

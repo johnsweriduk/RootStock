@@ -1,0 +1,107 @@
+/* PORTFOLIO STYLES */
+
+.portfolio-container {
+  margin: 0 auto;
+  display; flex;
+  flex-direction: column;
+  margin-top: 75px;
+  margin-bottom: 200px;
+}
+
+.portfolio-amount {
+  text-align: center;
+  font-size: 2.7em;
+}
+
+.portfolio-amount span {
+  color: green;
+}
+
+.portfolio-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-card-tag {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portfolio-card {
+  border: 1px solid #168593;
+  width: 24vw;
+  background: #EDFEFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card p {
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.portfolio-card-titles {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-left: 25px;
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-card-titles span {
+
+}
+
+.portfolio-repeat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 7px;
+}
+
+.portfolio-repeat .button {
+  margin-bottom: 0;
+  margin-right: 25px;
+}
+
+.stock-info-container {
+  font-size: 1.5em;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock-info-container span {
+
+}
+
+.repeated-stock {
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+.repeated-stock span {
+  font-weight: bold;
+}
+
+.portfolio-search {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.conservative {
+  color: blue;
+}
+
+.moderate {
+  color: orange;
+}
+
+.aggressive {
+  color: red;
+}

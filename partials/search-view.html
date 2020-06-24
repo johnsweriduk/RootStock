@@ -1,1 +1,13 @@
-search
+<rootstock-nav></rootstock-nav>
+<main>
+    <div class="container">
+        <div class="stock-list column eight">
+            <div class="instructions" ng-include="'partials/search/instructions.html'"></div>
+            <div class="legend" ng-include="'partials/search/legend.html'"></div>
+            <div class="stocks" ng-include="'partials/search/stocks.html'"></div>
+        </div>
+        <div class="complete" ng-include="'partials/search/complete-modal.html'"></div>
+        <stock-modal></stock-modal>
+    </div>
+</main>
+<footer ng-include="'/partials/global/footer.html'"></footer>
