@@ -22,6 +22,8 @@ a {
 }
 .socials {
   margin-top: 20px;
+  right: 100px;
+  position: absolute;
 }
 
 .socials img {
