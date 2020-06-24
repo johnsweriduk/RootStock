@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92325bc6-1594-4a6e-bfa7-98b22776d8e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="92325bc6-1594-4a6e-bfa7-98b22776d8e2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/public/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="867">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <caret line="51" column="1" selection-start-line="50" selection-start-column="23" selection-end-line="51" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -175,10 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1080" />
-    <option name="y" value="4" />
-    <option name="width" value="340" />
-    <option name="height" value="372" />
+    <option name="x" value="2552" />
+    <option name="y" value="-7" />
+    <option name="width" value="1096" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -247,17 +245,17 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\images\filter" />
-      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\js\zingchart" />
-      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\images\filter" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials\search" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials\signup" />
       <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\partials\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\images\filter" />
+      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\js\zingchart" />
+      <recent name="C:\Users\jswer\Desktop\GA Work\project 3\RootStock\public\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,10 +288,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45129000" />
+    <option name="totallyTimeSpent" value="45772000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1088" y="-7" width="1096" height="1896" extended-state="6" />
+    <frame x="2552" y="-7" width="1096" height="1896" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3069498" />
@@ -458,7 +456,7 @@
     <entry file="file://$PROJECT_DIR$/public/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <caret line="51" column="1" selection-start-line="50" selection-start-column="23" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>
