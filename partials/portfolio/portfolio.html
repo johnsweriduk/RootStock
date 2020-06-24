@@ -10,11 +10,13 @@
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
+          <span>Shares</span>
         </div>
         <div ng-repeat="stock in portfolio[0].conservative" class="portfolio-repeat">
           <div class="stock-info-container">
             <span>{{stock.ticker}}</span>
             <span>{{stock.price}}</span>
+            <span>{{(portfolio[0].conservativePercent * portfolio[0].investmentAmount / stock.price / 10 / 100).toFixed((2))}}</span>
           </div>
           <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>
@@ -28,11 +30,13 @@
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
+          <span>Shares</span>
         </div>
         <div ng-repeat="stock in portfolio[0].moderate" class="portfolio-repeat">
           <div class="stock-info-container">
             <span>{{stock.ticker}}</span>
             <span>{{stock.price}}</span>
+            <span>{{(portfolio[0].moderatePercent * portfolio[0].investmentAmount / stock.price / 10 / 100).toFixed((2))}}</span>
           </div>
           <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>
@@ -46,11 +50,13 @@
         <div class="portfolio-card-titles">
           <span>Name</span>
           <span>Price</span>
+          <spam>Shares</spam>
         </div>
         <div ng-repeat="stock in portfolio[0].aggressive" class="portfolio-repeat">
           <div class="stock-info-container">
             <span>{{stock.ticker}}</span>
           <span>{{stock.price}}</span>
+            <span>{{(portfolio[0].aggressivePercent * portfolio[0].investmentAmount / stock.price / 10 / 100).toFixed((2))}}</span>
           </div>
           <a class="button" href="#" ng-click="openStockModal(stock.ticker)">View</a>
         </div>

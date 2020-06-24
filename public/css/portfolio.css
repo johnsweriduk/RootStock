@@ -48,13 +48,12 @@
   font-size: 1.7em;
   font-weight: bold;
   margin-left: 25px;
-  width: 38%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .portfolio-card-titles span {
-
+  width: 21.5%;
+  display: inline-block;
 }
 
 .portfolio-repeat {
@@ -72,13 +71,13 @@
 
 .stock-info-container {
   font-size: 1.5em;
-  width: 40%;
-  display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
 .stock-info-container span {
-
+  width: 31.33333%;
+  display: inline-block;
 }
 
 .repeated-stock {
