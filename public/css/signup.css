@@ -3,7 +3,7 @@
   width: 80%;
   height: 800px;
   margin: 60px auto;
-  padding: 50px 100px;
+  padding: 50px 50px;
   background-color: #168593;
   border-radius: 10px;
 }
@@ -12,12 +12,26 @@
   font-family: 'Playfair Display', serif;
   font-size: 5em;
   color: white;
-  padding-left: 25px;
   border-radius: 5px;
 }
 
 .welcome-message span {
   font-style: italic;
+}
+
+.questionnaire-text-and-image {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+
+.questionnaire-text-and-image img {
+  margin-right: 30px;
+}
+
+.questionnaire-text-and-image .button {
+  margin-top: 50px;
 }
 
 .questionnaire-intro-header {
@@ -32,11 +46,18 @@
   font-size: 2em;
 }
 
+.questionnaire-intro-text span {
+  font-weight: bold;
+}
+
+
 .questionnaire {
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
-  margin-top: 10px;
+  /* padding-left: 100px; */
+  color: white;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .question {
@@ -51,8 +72,8 @@
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  font-size: 2em;
-  min-width: 60%;
+  font-size: 2.3em;
+  min-width: 40%;
 }
 
 .answer:hover {
